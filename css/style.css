@@ -1,14 +1,37 @@
-/*  Global     */
+  /*   Global   */
+
 
 body{
 	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, sans-serif;
 	line-height: 1em;
+
 }
 
 p{
 
 
 }
+/*    Nav         */
+nav a:link,
+nav a:visited {
+  color: #476081;
+  text-decoration: none; 
+  }
+
+nav a:focus {
+  border: 2px solid red;
+ }
+
+nav a:hover {
+  font-size: 2em;
+  background: #9099A7
+  }
+
+nav a:active{
+  background: #123159;
+  color: #F2994B
+  }
+
 /*  Home Page     */
 
 
@@ -34,7 +57,18 @@ p{
 	float: left;
 	width: 50%;
 
+}
+
+.left{
+	width:49%;
+	float:left;
+
+}
+.right{
+	float:right;
+	width: 49%;
+
 
 }
 
-/*  Style Tile    */
+/*  Style Tile   */ 
