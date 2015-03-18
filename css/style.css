@@ -1,33 +1,57 @@
-/*   Global   */
-
-
-body{
-	font-family:'Marvel', sans-serif;
-	line-height: 1em;
-	font-size: 1.25em;
-
+body {
+  font-family: 'Marvel', sans-serif;
+}
+p, li{
+  font-size: 1.25em;
 }
 
-/*  Home Page     */
- .home header {
-	font-family:'Cuprum', sans-serif;
-   font-size: 5em;
-   color: #F2D8D3;
-	text-align: left;
-   letter-spacng: 6px;
-	background: #BF3668;
-   margin: 0 auto 0 auto;
-   width: 100%;
-   Padding:3% 5% 3% 1%;
-   
-
+h2 {
+  font-size: 1.75em;
 }
 
+/*navigation*/
+.navbar {
+  background: grey;
+  margin-top: -16px;
+  background-image: url(./img/navbg.png);
+  /*position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  width: 100%;*/
+ 
+}
 
-/*    Nav         */
+/*#home {
+  background-image: url(./img/navbg.png);
+}*/
+.heading {
+  
+  display: inline-block;
+  margin: 0 100px ;
+  letter-spacing: 2.5px;
+  font-size: 3.5em; 
+  vertical-align: middle;
+  color: white;
+  
+  
+}
+
+nav li {
+  
+  display: inline;
+  text-align: left;
+  list-style: none;
+  float: right;
+  padding: 20px 50px;
+  font-size: 2em;
+  margin: 130px 0;
+  vertical-align: middle;
+  
+}
 nav a:link,
 nav a:visited {
-  color: #476081;
+  color: white;
   text-decoration: none; 
   
   }
@@ -37,132 +61,149 @@ nav a:focus {
  }
 
 nav a:hover {
-    background: #9099A7
+    background: rgba(255, 117, 25,.75);
   }
 
 nav a:active{
-  background: #123159;
-  color: #F2994B
+  background: #FF5CAD;
+  color: teal
   }
 
-nav li {
-  display:inline-block;
-}
 
-nav{
-  text-align: right;
-  padding: 10px 0;
-  margin: 20px 0 0;
-}
 
-nav ul {
-  list-style: none;
-  margin: 0 10px;
-  padding: 0 3% 10px 0;
-  font-size: 1.5em;
-  word-spacing: 1em;
-  }
-
-.pic {
-  
-  padding:0 0 0 10px;
+.logo {
   display: inline;
-  max-width: 350px;
-  margin:0 auto 30px;
-  border-radius: 30%;
-
-}
-
-/*  Bio page   */
-
-.bio h2,
-.bio h3 {
-	font-family: 'Cuprum', sans-serif;
-	text-align: left;
-   
-}
-
-.bio header{
-	color: #F2D8D3;
-   font-family:'Cuprum', sans-serif;
-   font-size: 2em;
-	letter-spacing: 2px;
-   background: #BF3668;
-   margin: 0 auto 0 auto;
-   width: 100%;
-   Padding:2% 5% 2% 1%;
+  vertical-align: middle;
+  margin: 15px 50px;
   
-
 }
-.bio article {
-	background: teal;
-	margin: 0 auto 0 auto;
-	width: 1000px;
-}
-.bio section{
-	float: left;
-	width: 50%;
+/*bio and picture*/
 
-}
-
-.left{
-	width:49%;
-	float:left;
-
-}
-.right{
-	float:right;
-	width: 49%;
-
-
-}
-
-/*  Style Tile   */ 
-
-section {
-  margin: 20px 0;
-}
-
-.color-1,
-.color-2,
-.color-3,
-.pattern-1,
-.pattern-2,
-.pattern-3, 
-.imagery-1,
-.imagery-2,
-.imagery-3 {
-  border: 1px solid #000;
+.profile-pic {
+  margin: 10px;
+  padding: 10px;
+  border-radius: 15%;
+  vertical-align: middle;
+  margin-top: 50px;
+  display: inline;
   float: left;
-  margin: 0 10px;
-  height: 50px;
-  width: 50px;
+  padding-right: 50px;
 }
-.color-1{
-  background:#BF3668;
-}
-.color-2{
-  background: teal;
-  }
-.color-3 {
-  background: #476081;
-}
+
+.bio {
+ border-bottom: dotted orange;
+ padding; 10px;
  
-/* Set Your Own Typography */
- .style-text {
-   font-family:'Marvel', sans-serif;
+ margin-top: 50px;
+ padding: 10px;
+ padding-bottom: 60px;
+ 
  }
-.container h1, h2 {
-  font-family:'Cuprum', sans-serif;
-  color:#476081;
+
+.bio ul {
+  
+  list-style-type: none;
 }
 
 
-  /* Set Your Own Margin & Padding */
-h2, h3, p {
-  margin: 0;
-  padding: 5px;
+/*gallery*/
+
+.art {
+  
+  margin-left: 50px;
+  font-size: 2em;
 }
- 
-/* Clearfix - Oo Not Remove */
-.clearfix {clear:both;display:block;overflow:hidden;visibility:hidden;width:0;height:0}
+
+
+
+figure {
+   
+  
+  float: left;
+  height: 300px;
+  margin: 20px;
+  width: 300px;
+  position: relative;
+}
+
+/* Header */
+figure h5 {
+  background: rgba(214, 214, 255,.75);
+  position: absolute;
+  top: 0;
+  left: -10px;
+  width: 100%;
+  z-index: 2;
+  font-size: 1.25em;
+  text-transform: uppercase;
+  
+}
+.thumbnail {
+  background: orange;
+  position: relative;
+  height: 300px;
+  width: 300px;
+  overflow: hidden;
+  
+}
+
+/* Caption - First Frame */
+.thumbnail p {
+  position: absolute;
+  margin: 0;  
+  bottom: -300px;
+  transition: bottom .75s ease-in;
+  background: rgba(255, 117, 25,.75);
+}
+
+/* Caption - Last Frame */
+.thumbnail:hover p {
+  bottom: 0;
+}
+
+.container {
+  margin: 0 auto;
+  
+}
+
+/****code for gallery taken from class example****/
+
+
+/*contact*/
+footer {
+  
+  font-size: 1em;
+  text-align: center;
+  clear: both;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  color: #7D7D7A;
+  border-top: dotted orange;
+  }
+.contact-means {
+   list-style-type: none;
+}
+/*contact form*/
+.typeform-widget {
+  padding: 180px;
+  margin:0 auto;
+  width: 80%;
+  height: 500px;
+}
+/*media queries*/
+@media screen and (min-width:1811px) {
+  .page{
+    max-width:1811px;
+    margin: auto;
+    
+  }
+  
+}
+@media screen and (max-width: 1807px){
+  .heading {
+    
+    
+  }
+  
+}
+
